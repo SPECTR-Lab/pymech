@@ -11,7 +11,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Read in file, create object and print
-fn = "out.rea"
+fn = "box.rea"
 d = readrea(fn)
 print(d)
 
@@ -31,10 +31,9 @@ for j in range(nel): # Iterate through each element
         a = bb[0][side][0]
         b = repr(a)
         c = str(b)
-        c = c.lstrip("'"); c = c.rstrip("'");
-        c = "$" + c + "$"
-        bc.append(c)
-    
+        c = c.lstrip("'"); c = c.rstrip("'");                       
+        bc.append(c)    
+
 # Find boundaries
 pointsX = []; pointsY = [];
 X = []; Y = [];
